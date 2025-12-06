@@ -1,23 +1,19 @@
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileNotFoundException;
-import java.awt.event.ActionEvent;
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
 public class Main {
     public static void main(String[] args) {
         
-        base.setUp("home");
+        base.setUp("Main Menu");
         
         JLabel mainMenuLabel = new JLabel("Please Select One Of The Following:");
         mainMenuLabel.setBounds(86, 65, 300, 25);
         mainMenuLabel.setForeground(Color.black);
         base.frame.add(mainMenuLabel);
         
-
         JButton simpleSumButton = new JButton("Simple Sums");
         simpleSumButton.setBounds(140, 100, 115, 25); //place x, place y, height, width
         base.frame.add(simpleSumButton);
