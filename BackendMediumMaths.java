@@ -1,31 +1,31 @@
 public class BackendMediumMaths{
 
-    public static void keneticEnergy(int mass, int Velocity){
-        int intTotal = (int) 0.5 * mass * (Velocity * Velocity);
-        String total = convertingTotal(intTotal);
+    public static void keneticEnergy(double mass, double Velocity){
+        double DTotal = 0.5 * mass * (Velocity * Velocity);
+        String total = convertingTotal(DTotal);
         base.result("Kenetic Energy", total);
     }
 
-    public static void weight(int mass, int gfs){ //gfs = Gravitational Field Strength
-        int intTotal = mass * gfs;
-        String total = convertingTotal(intTotal);
+    public static void weight(double mass, double gfs){ //gfs = Gravitational Field Strength
+        double DTotal = mass * gfs;
+        String total = convertingTotal(DTotal);
         base.result("Weight", total);
     }
     
-    public static void hydrostaticPressure(int height, int density, int gfs){ //Pressure of a liquid at rest.
-        int intTotal = height * density * gfs;
-        String total = convertingTotal(intTotal);
+    public static void hydrostaticPressure(double height, double density, double gfs){ //Pressure of a liquid at rest.
+        double DTotal = height * density * gfs;
+        String total = convertingTotal(DTotal);
         base.result("Hydrostatic Pressure", total);
     }
 
-    public static void elasticPotentialEnergy(int springConstant, int Extenstion){
-        int intTotal = (int) (0.5 * springConstant * (Extenstion * Extenstion));
-        String total = convertingTotal(intTotal);
+    public static void elasticPotentialEnergy(double springConstant, double Extenstion){ // energy stored in an object when it is stretched or compressed
+        double DTotal = 0.5 * springConstant * (Extenstion * Extenstion);
+        String total = convertingTotal(DTotal);
         base.result("Elastic Potential Energy", total);
     }
 
-    public static String convertingTotal(int intTotal){
-        return String.valueOf(intTotal);
+    public static String convertingTotal(double DTotal){ // to reduce the amount of code
+        return String.valueOf(DTotal);
     }
 
 }

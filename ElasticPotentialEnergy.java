@@ -5,32 +5,32 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class KeneticEnergy {
-    public static void main(){
-        base.setUp("Kenetic Energy");
+public class ElasticPotentialEnergy {
+    public static void main() {
+        base.setUp("Elastic Potential Energy");
 
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
         headingLabel.setForeground(Color.black);
         base.frame.add(headingLabel);
 
-		JLabel inputALabel = new JLabel("Number for Mass(kg): ");
+		JLabel inputALabel = new JLabel("Number for Spring Constant(N/m)): ");
 		inputALabel.setBounds(50, 125, 200, 25);
 		inputALabel.setForeground(Color.black);
 		base.frame.add(inputALabel);
 		
-		JTextField mass = new JTextField();
-		mass.setBounds(170, 125, 150, 25);
-	    base.frame.add(mass);
+		JTextField springConstant = new JTextField();
+		springConstant.setBounds(170, 125, 150, 25);
+	    base.frame.add(springConstant);
 
-        JLabel inputBLabel = new JLabel("Number for Velocity(m/s): ");
+        JLabel inputBLabel = new JLabel("Number for Extension(m): ");
 		inputBLabel.setBounds(50, 200, 200, 25);
 		inputBLabel.setForeground(Color.black);
 		base.frame.add(inputBLabel);
 		
-		JTextField velocity = new JTextField(); 
-		velocity.setBounds(170, 200, 150, 25);
-	    base.frame.add(velocity);
+		JTextField Extenstion = new JTextField(); 
+		Extenstion.setBounds(170, 200, 150, 25);
+	    base.frame.add(Extenstion);
         //Calls Image
 
         //Calls Appropriate Maths Function!!
@@ -39,10 +39,10 @@ public class KeneticEnergy {
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                double massValue = Double.parseDouble(mass.getText());
-                double velocityValue = Double.parseDouble(velocity.getText());
+                double springConstantValue = Double.parseDouble(springConstant.getText());
+                double ExtenstionValue = Double.parseDouble(Extenstion.getText());
 
-                BackendMediumMaths.keneticEnergy(massValue, velocityValue);
+                BackendMediumMaths.elasticPotentialEnergy(springConstantValue, ExtenstionValue);
             }
         });
     }

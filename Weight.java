@@ -5,9 +5,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class KeneticEnergy {
-    public static void main(){
-        base.setUp("Kenetic Energy");
+public class Weight {
+    public static void main() {
+        base.setUp("Weight");
 
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
@@ -23,14 +23,14 @@ public class KeneticEnergy {
 		mass.setBounds(170, 125, 150, 25);
 	    base.frame.add(mass);
 
-        JLabel inputBLabel = new JLabel("Number for Velocity(m/s): ");
+        JLabel inputBLabel = new JLabel("Number for Gravitational Field Strength(N/kg): ");
 		inputBLabel.setBounds(50, 200, 200, 25);
 		inputBLabel.setForeground(Color.black);
 		base.frame.add(inputBLabel);
 		
-		JTextField velocity = new JTextField(); 
-		velocity.setBounds(170, 200, 150, 25);
-	    base.frame.add(velocity);
+		JTextField GFS = new JTextField(); 
+		GFS.setBounds(170, 200, 150, 25);
+	    base.frame.add(GFS);
         //Calls Image
 
         //Calls Appropriate Maths Function!!
@@ -40,9 +40,9 @@ public class KeneticEnergy {
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 double massValue = Double.parseDouble(mass.getText());
-                double velocityValue = Double.parseDouble(velocity.getText());
+                double GFSValue = Double.parseDouble(GFS.getText());
 
-                BackendMediumMaths.keneticEnergy(massValue, velocityValue);
+                BackendMediumMaths.weight(massValue, GFSValue);
             }
         });
     }

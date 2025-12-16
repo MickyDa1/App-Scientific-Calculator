@@ -18,7 +18,7 @@ public class MediumMenu {
         base.frame.add(mainMenuLabel);
         
 
-        JButton keneticEnergyButton = new JButton("A + B");
+        JButton keneticEnergyButton = new JButton("Kenetic Energy");
         keneticEnergyButton.setBounds(140, 100, 115, 25); //place x, place y, 115, 25  
         base.frame.add(keneticEnergyButton);
         keneticEnergyButton.addActionListener(new ActionListener() {
@@ -28,33 +28,33 @@ public class MediumMenu {
             }
         });
 
-        JButton simpleSubtractButton = new JButton("A - B");
-        simpleSubtractButton.setBounds(140, 150, 115, 25); //place x, place y, 115, 25  
-        base.frame.add(simpleSubtractButton);
-        simpleSubtractButton.addActionListener(new ActionListener() {
+        JButton weightButton = new JButton("Weight");
+        weightButton.setBounds(140, 150, 115, 25); //place x, place y, 115, 25  
+        base.frame.add(weightButton);
+        weightButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 base.frame.setVisible(false);
-				SimpleSubtract.main();
+				Weight.main();
             }
         });
 
-        JButton simpleDivideButton = new JButton("A / B");
-        simpleDivideButton.setBounds(140, 200, 115, 25); //place x, place y, 115, 25  
-        base.frame.add(simpleDivideButton);
-        simpleDivideButton.addActionListener(new ActionListener() {
+        JButton HydrostaticPressureButton = new JButton("Hydrostatic Pressure");
+        HydrostaticPressureButton.setBounds(140, 200, 115, 25); //place x, place y, 115, 25  
+        base.frame.add(HydrostaticPressureButton);
+        HydrostaticPressureButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 base.frame.setVisible(false);
-				SimpleDivide.main();
+				HydrostaticPressure.main();
             }
         });
 
-        JButton simpleMultiplyButton = new JButton("A x B");
-        simpleMultiplyButton.setBounds(140, 250, 115, 25); //place x, place y, 115, 25  
-        base.frame.add(simpleMultiplyButton);
-        simpleMultiplyButton.addActionListener(new ActionListener() {
+        JButton ElasticPotentialEnergyButton = new JButton("Elastic Potential Energy");
+        ElasticPotentialEnergyButton.setBounds(140, 250, 115, 25); //place x, place y, 115, 25  
+        base.frame.add(ElasticPotentialEnergyButton);
+        ElasticPotentialEnergyButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 base.frame.setVisible(false);
-				SimpleMultiply.main();
+				ElasticPotentialEnergy.main();
             }
         });
     }
