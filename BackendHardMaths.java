@@ -16,4 +16,16 @@ public class BackendHardMaths {
         
     }
 
+    public static int factorial(int input) {
+        if (input == 1) {
+            return 1;
+        }
+
+        return input * factorial(input - 1);
+    }
+
+
+    
+
+
 }

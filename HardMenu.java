@@ -24,13 +24,15 @@ public class HardMenu {
             }
         });
 
-        JButton MediumSumButton = new JButton("Medium Sums");
-        MediumSumButton.setBounds(140, 120, 115, 25);
-        base.frame.add(MediumSumButton);
-
-        JButton hardSumButton = new JButton("Hard Sums");
-        hardSumButton.setBounds(140, 140, 115, 25);
-        base.frame.add(hardSumButton);
+        JButton FactorialButton = new JButton("Factorial");
+        FactorialButton.setBounds(140, 175, 115, 25);
+        base.frame.add(FactorialButton);
+        FactorialButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                base.frame.setVisible(false);
+                Factorial.main();
+            }
+        });
         
         
     }
