@@ -24,9 +24,5 @@ public class BackendHardMaths {
         return input * factorial(input - 1);
     }
 
-
-    
-    
-
-
 }
+

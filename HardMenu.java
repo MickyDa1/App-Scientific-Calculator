@@ -33,6 +33,16 @@ public class HardMenu {
                 Factorial.main();
             }
         });
+
+        JButton SortingButton = new JButton("Sorting");
+        SortingButton.setBounds(140, 250, 115, 25);
+        base.frame.add(SortingButton);
+        SortingButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                base.frame.setVisible(false);
+                SortingScreen.main();
+            }
+        });
         
         
     }
