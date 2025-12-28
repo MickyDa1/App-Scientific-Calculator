@@ -39,10 +39,14 @@ public class KeneticEnergy {
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                double massValue = Double.parseDouble(mass.getText());
-                double velocityValue = Double.parseDouble(velocity.getText());
-
-                BackendMediumMaths.keneticEnergy(massValue, velocityValue);
+                try{
+                    double massValue = Double.parseDouble(mass.getText());
+                    double velocityValue = Double.parseDouble(velocity.getText());
+                    
+                    BackendMediumMaths.keneticEnergy(massValue, velocityValue);
+                } catch (IllegalArgumentException b) {
+                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
             }
         });
     }

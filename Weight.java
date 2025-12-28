@@ -39,10 +39,13 @@ public class Weight {
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                double massValue = Double.parseDouble(mass.getText());
-                double GFSValue = Double.parseDouble(GFS.getText());
-
-                BackendMediumMaths.weight(massValue, GFSValue);
+                try{
+                    double massValue = Double.parseDouble(mass.getText());
+                    double GFSValue = Double.parseDouble(GFS.getText());
+                    BackendMediumMaths.weight(massValue, GFSValue);
+                } catch (IllegalArgumentException b) {
+                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
             }
         });
     }

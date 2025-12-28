@@ -22,8 +22,6 @@ public class HydrostaticPressure {
 		JTextField height = new JTextField();
 		height.setBounds(170, 125, 150, 25);
 	    base.frame.add(height);
-
-        ///////
         
         JLabel inputBLabel = new JLabel("Number for Density(kg/m^3): ");
 		inputBLabel.setBounds(50, 200, 200, 25);
@@ -33,8 +31,6 @@ public class HydrostaticPressure {
 		JTextField density = new JTextField(); 
 		density.setBounds(170, 200, 150, 25);
 	    base.frame.add(density);
-
-        ////////
         
         JLabel inputCLabel = new JLabel("Gravitational Field Strength(N/kg)"); //gfs = Gravitational Field Strength
         inputCLabel.setBounds(170, 275, 200, 25);
@@ -51,12 +47,15 @@ public class HydrostaticPressure {
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                double heightValue = Double.parseDouble(height.getText());
-                double densityValue = Double.parseDouble(density.getText());
-                double gfsValue = Double.parseDouble(gfs.getText());
-
-                BackendMediumMaths.hydrostaticPressure(heightValue, densityValue, gfsValue);
-
+                try{
+                    double heightValue = Double.parseDouble(height.getText());
+                    double densityValue = Double.parseDouble(density.getText());
+                    double gfsValue = Double.parseDouble(gfs.getText());
+                    
+                    BackendMediumMaths.hydrostaticPressure(heightValue, densityValue, gfsValue);
+                } catch (IllegalArgumentException b) {
+                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
             }
         });
     }

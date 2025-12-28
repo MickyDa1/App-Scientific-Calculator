@@ -39,10 +39,14 @@ public class ElasticPotentialEnergy {
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                double springConstantValue = Double.parseDouble(springConstant.getText());
-                double ExtenstionValue = Double.parseDouble(Extenstion.getText());
+                try {
+                    double springConstantValue = Double.parseDouble(springConstant.getText());
+                    double ExtenstionValue = Double.parseDouble(Extenstion.getText());
 
-                BackendMediumMaths.elasticPotentialEnergy(springConstantValue, ExtenstionValue);
+                    BackendMediumMaths.elasticPotentialEnergy(springConstantValue, ExtenstionValue);
+                } catch (IllegalArgumentException b) {
+                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
             }
         });
     }
