@@ -1,29 +1,29 @@
-Day 4 - 17.12.2025
+Day 4 - 17.12.2025  - hard Branch
   -Created the Azimuth method in BackendHardMaths
   -created the hard menu and Azimuth Screens in java
 
-Day 5 - 18.12.2025
+Day 5 - 18.12.2025 - hard Branch
   -Did error handling with Azimuth in order to check for empty string, just need to work on how to message gets put out that it's wrong.
 
-Day 6 - 19.12.2025
+Day 6 - 19.12.2025 - hard Branch
   -added the facotrial method and decided to use recursion to demonstrate i know and also to reduce the time taken.
   -Got factorial to work however it's messier then others due to the way i've done the return
 
-Day 7 - 23.12.2025
+Day 7 - 23.12.2025 - hard Branch
   -added the sorting logic, i split this away from the BackendHardMaths as it would have not made sense and also i know where to look for errors if this were to break
 
-Day 8 - 26.12.2025
+Day 8 - 26.12.2025 - hard Branch
   -worked and created the next page checker, also discovered a different type of dialogue box.
   -Tested to see if the pagination worked, it did but is rather slow so i might look into how
    i can fix the entry
   -Did the sorting section.
 
-Day 9 - 27.12.2025
+Day 9 - 27.12.2025 - hard Branch
   -got the pagination working how i wanted it.(personally happy with this as it's something i've struggled with in
     the past);
   -added a prime checker (checkes if a number is prime)
 
-Day 10 - 28.12.2025
+Day 10 - 28.12.2025 - hard Branch
   -Added error handling to azimuth. this involved me taking out the if statement
   -added the proper results page for azimuth (dont know why i did not add it at the time)
   -changed the return type and changed the relevent types in the right places to accomodate for large numbers 
