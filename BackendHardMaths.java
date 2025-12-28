@@ -1,4 +1,7 @@
 
+import java.math.BigInteger;
+
+
 public class BackendHardMaths {
 
     public static void azimuth(double x1, double x2, double y1, double y2){//west, east, south, north - HONESLTY DONT KNOW WHY
@@ -12,16 +15,16 @@ public class BackendHardMaths {
             azimuthDeg = azimuthDeg + 360;
         }
 
-        System.out.println(azimuthDeg);
-        
+        String total = String.valueOf(azimuthDeg);
+        base.result("Azimuth", total);
     }
 
-    public static int factorial(int input) {
+    public static BigInteger factorial(int input) { // has to be big integer as when testing the number 75 was too much
         if (input == 1) {
-            return 1;
+            return BigInteger.valueOf(1);
         }
 
-        return input * factorial(input - 1);
+        return BigInteger.valueOf(input).multiply(factorial(input - 1));
     }
 
     public static void primeChecker(int input){

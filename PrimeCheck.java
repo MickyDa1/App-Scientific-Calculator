@@ -29,8 +29,12 @@ public class PrimeCheck {
         base.frame.add(viewButton);
         viewButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                int numberValue = Integer.parseInt(Number.getText());
-                BackendHardMaths.primeChecker(numberValue);
+                try {
+                    int numberValue = Integer.parseInt(Number.getText());
+                    BackendHardMaths.primeChecker(numberValue);
+                } catch (IllegalArgumentException b) {
+                    base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
             }
         });
         

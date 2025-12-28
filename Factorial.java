@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.math.BigInteger;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -30,14 +31,20 @@ public class Factorial {
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                int number = Integer.parseInt(factorialNumber.getText());
+                try{
+                    int number = Integer.parseInt(factorialNumber.getText());
 
-                // had to be put here so i can retrive the result
-                int actualTotal = BackendHardMaths.factorial(number);
+                    // had to be put here so i can retrive the result
+                    BigInteger actualTotal = BackendHardMaths.factorial(number);
 
-                String total = String.valueOf(actualTotal);
-                base.result("Factorial", total);
+                    String total = String.valueOf(actualTotal);
+                    base.result("Factorial", total);
 
+                } catch (IllegalArgumentException b){ // e was already in used by the actionPerformed
+                    base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOX");
+                }
+
+                
             }
         });
         

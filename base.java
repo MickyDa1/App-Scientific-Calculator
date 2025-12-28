@@ -3,6 +3,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JOptionPane.*;
 
 public class base {
 
@@ -62,15 +63,18 @@ public class base {
     }
 
     public static boolean check() {
-    int result = JOptionPane.showConfirmDialog(
-        null,
-        "Are you sure?",
-        "Confirm",
-        JOptionPane.OK_OPTION
-    );
-    return result == JOptionPane.YES_OPTION;
-}
+        int result = JOptionPane.showConfirmDialog(
+            null,
+            "Are you sure?",
+            "Confirm",
+            JOptionPane.OK_OPTION
+        );
+        return result == JOptionPane.YES_OPTION;
+    }
 
+    public static void mistake(String title, String message){
+        JOptionPane.showMessageDialog(frame, message, title, JOptionPane.ERROR_MESSAGE);
+    }
 
 }
         

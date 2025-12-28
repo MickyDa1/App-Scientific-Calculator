@@ -30,7 +30,6 @@ public class Main {
             public void actionPerformed(ActionEvent e){
                 base.frame.setVisible(false);
                 HardMenu.main();
-                //base.check();
                 
             }
         });

@@ -63,10 +63,9 @@ public class Azimuth {
             public void actionPerformed(ActionEvent e){
                 
 
-                if (startingX1.getText().isEmpty() || startingY1.getText().isEmpty() || targetX2.getText().isEmpty() || targetY2.getText().isEmpty()){
-                    System.out.println("ERROR 404 - PLEASE FILL IN ALL BOXES");
-                } else {
-                    base.frame.setVisible(false);
+                
+                try{
+                    //base.frame.setVisible(false);
 
                     double X1Value = Double.parseDouble(startingX1.getText());
                     double X2Value = Double.parseDouble(targetX2.getText());
@@ -74,7 +73,9 @@ public class Azimuth {
                     double Y2Value = Double.parseDouble(targetY2.getText());
 
                     BackendHardMaths.azimuth(X1Value, X2Value, Y1Value, Y2Value);
-                }             
+                } catch (IllegalArgumentException b){ // e was already in used by the actionPerformed
+                    base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
                 
             }
         });

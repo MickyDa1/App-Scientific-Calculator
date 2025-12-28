@@ -19,5 +19,20 @@ Day 8 - 26.12.2025
   -Did the sorting section.
 
 Day 9 - 27.12.2025
-  -got the pagination working how i wanted it.
-  
+  -got the pagination working how i wanted it.(personally happy with this as it's something i've struggled with in
+    the past);
+  -added a prime checker (checkes if a number is prime)
+
+Day 10 - 28.12.2025
+  -Added error handling to azimuth. this involved me taking out the if statement
+  -added the proper results page for azimuth (dont know why i did not add it at the time)
+  -changed the return type and changed the relevent types in the right places to accomodate for large numbers 
+    in the factorial section
+  -added error handling to factorial
+  -added error handling to the sorting logic (if the arraylist is empty, it will tell the user that)
+  -noticed that i had the view button on the sorting screen read in the number which was not needed so set it to
+    0.0 as for that change it didnt require it however i need it to change into different section of my sorting code
+  -added error handling for invalid entry types on sorting screen
+  -added error handling for invalid entry types on PrimeChecker
+
+  **==DECIDED TO ADD THE BACK METHOD IN AT THE END AS THIS WILL BE THE EASIEST PLACE TO DO IT==**

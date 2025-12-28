@@ -30,8 +30,13 @@ public class SortingScreen {
         base.frame.add(addButton);
         addButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                Double numberValue = Double.parseDouble(Number.getText());
-                SortingLogic.sorting(1,numberValue);
+                try {
+                    Double numberValue = Double.parseDouble(Number.getText());
+                    SortingLogic.sorting(1,numberValue);
+                } catch (IllegalArgumentException b) {
+                    base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
+                
             }
         });
 
@@ -40,7 +45,7 @@ public class SortingScreen {
         base.frame.add(viewButton);
         viewButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                Double numberValue = Double.parseDouble(Number.getText());
+                Double numberValue = 0.0;
                 SortingLogic.sorting(2, numberValue);
             }
         });

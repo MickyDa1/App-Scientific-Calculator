@@ -14,7 +14,13 @@ public class SortingLogic {
                 break;
 
             case 2: // reading
-                sortingRead(sortingList);
+
+                if (sortingList.isEmpty()){
+                    base.mistake("ERROR", "you have not added any information to be sorted.");
+                } else {
+                    sortingRead(sortingList);
+                }
+                
                 break;
             }
         }
