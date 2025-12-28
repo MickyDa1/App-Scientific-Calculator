@@ -20,18 +20,20 @@ public class Main {
         simpleSumButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 base.frame.setVisible(false);
-				SimpleMenu.Main();
+				        SimpleMenu.Main();
             }
         });
-
-
+  
         JButton MediumSumButton = new JButton("Medium Sums");
         MediumSumButton.setBounds(140, 120, 115, 25);
         base.frame.add(MediumSumButton);
-
-        JButton hardSumButton = new JButton("Hard Sums");
-        hardSumButton.setBounds(140, 140, 115, 25);
-        base.frame.add(hardSumButton);
+        MediumSumButton.addActionListener(new ActionListener() {
+           public void actionPerformed(ActionEvent e) {
+                base.frame.setVisible(false);
+				        MedioumMenu.Main();
+            }
+        });
+      
         
         
     }
