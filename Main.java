@@ -1,4 +1,6 @@
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import java.awt.event.ActionEvent;
@@ -7,17 +9,23 @@ import java.awt.event.ActionListener;
 public class Main {
     public static void main(String[] args) {
         
+        base.setUp("Main Menu");
         
-        base.setUp("home");
+        JLabel mainMenuLabel = new JLabel("Please Select One Of The Following:");
+        mainMenuLabel.setBounds(86, 65, 300, 25);
+        mainMenuLabel.setForeground(Color.black);
+        base.frame.add(mainMenuLabel);
         
-        JLabel mm_headingLabel_2 = new JLabel("Please Select One Of The Following");
-        mm_headingLabel_2.setBounds(86, 65, 300, 25);
-        mm_headingLabel_2.setForeground(Color.black);
-        base.frame.add(mm_headingLabel_2);
-
         JButton simpleSumButton = new JButton("Simple Sums");
-        simpleSumButton.setBounds(140, 100, 115, 25);
+        simpleSumButton.setBounds(140, 100, 115, 25); //place x, place y, height, width
         base.frame.add(simpleSumButton);
+        simpleSumButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                base.frame.setVisible(false);
+				SimpleMenu.Main();
+            }
+        });
+
 
         JButton MediumSumButton = new JButton("Medium Sums");
         MediumSumButton.setBounds(140, 120, 115, 25);
