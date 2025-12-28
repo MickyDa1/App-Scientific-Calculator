@@ -39,10 +39,14 @@ public class SimpleMultiply {
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                int inputAValue = Integer.parseInt(inputA.getText());
-                int inputBValue = Integer.parseInt(inputB.getText());
+                try {
+                    int inputAValue = Integer.parseInt(inputA.getText());
+                    int inputBValue = Integer.parseInt(inputB.getText());
 
-                BackendSimpleMaths.Multiply(inputAValue, inputBValue);
+                    BackendSimpleMaths.Multiply(inputAValue, inputBValue);
+                } catch (IllegalArgumentException b) {
+                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                }
             }
         });
     }
