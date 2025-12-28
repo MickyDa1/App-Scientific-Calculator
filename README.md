@@ -1,4 +1,4 @@
-day 3 - 15.12.2025
+day 3 - 15.12.2025 - medium Branch
   -added the BackendMediumMaths class and included the following items
     -Kenetic Energy
     -Weight
@@ -15,7 +15,7 @@ day 3 - 15.12.2025
     3 - Weight
     4 - Hydrostatic Pressure
 
-day 10 - 28.12.2025 - MediumSum Branch
+day 10 - 28.12.2025 - medium Branch
   Added error handling for all and changed the layout of the read me to match the hard sum branch
 
 
