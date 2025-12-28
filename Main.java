@@ -1,8 +1,6 @@
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,12 +20,6 @@ public class Main {
         JButton MediumSumButton = new JButton("Medium Sums");
         MediumSumButton.setBounds(140, 120, 115, 25);
         base.frame.add(MediumSumButton);
-        MediumSumButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                base.frame.setVisible(false);
-				MediumMenu.Main();
-            }
-        });
 
         JButton hardSumButton = new JButton("Hard Sums");
         hardSumButton.setBounds(140, 140, 115, 25);
