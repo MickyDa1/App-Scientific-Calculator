@@ -33,7 +33,6 @@ public class base {
         frame.setLayout(null);
         frame.getContentPane().setBackground(Color.blue);
 
-        //frame.add(rectangle);
 
         JLabel totalLabel = new JLabel(total);
         totalLabel.setBounds(137, 32, 300, 25);
