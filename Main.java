@@ -19,12 +19,6 @@ public class Main {
         JButton simpleSumButton = new JButton("Simple Sums");
         simpleSumButton.setBounds(140, 100, 115, 25); //place x, place y, height, width
         base.frame.add(simpleSumButton);
-        simpleSumButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                base.frame.setVisible(false);
-				SimpleMenu.Main();
-            }
-        });
 
 
         JButton MediumSumButton = new JButton("Medium Sums");
