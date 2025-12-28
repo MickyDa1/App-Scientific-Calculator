@@ -24,5 +24,23 @@ public class BackendHardMaths {
         return input * factorial(input - 1);
     }
 
+    public static void primeChecker(int input){
+        boolean result;
+
+        for (int i = 2; i * i <= input; i++) {
+            if (input % i == 0) {
+                result = false;
+                base.result("Prime Checker1", String.valueOf(result));
+                break;
+            }
+
+            if (input % i > 0) {
+                result = true;
+                base.result("Prime Checker", String.valueOf(result));
+                break;
+            }
+        }
+    }
+
 }
 

@@ -44,6 +44,14 @@ public class HardMenu {
             }
         });
         
+        JButton primeButton = new JButton("Prime Check");
+        primeButton.setBounds(140, 325, 115, 25);
+        base.frame.add(primeButton);
+        primeButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                PrimeCheck.main();
+            }
+        });
         
     }
 }
