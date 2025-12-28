@@ -3,8 +3,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,21 +17,28 @@ public class Main {
         JButton simpleSumButton = new JButton("Simple Sums");
         simpleSumButton.setBounds(140, 100, 115, 25); //place x, place y, height, width
         base.frame.add(simpleSumButton);
+<<<<<<< HEAD
 
 
+=======
+        simpleSumButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                base.frame.setVisible(false);
+				        SimpleMenu.Main();
+            }
+        });
+  
+>>>>>>> dd879edb07a14520136479a4a4c08dc69aee2ffa
         JButton MediumSumButton = new JButton("Medium Sums");
         MediumSumButton.setBounds(140, 120, 115, 25);
         base.frame.add(MediumSumButton);
         MediumSumButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+           public void actionPerformed(ActionEvent e) {
                 base.frame.setVisible(false);
-				MediumMenu.Main();
+				        MedioumMenu.Main();
             }
         });
-
-        JButton hardSumButton = new JButton("Hard Sums");
-        hardSumButton.setBounds(140, 140, 115, 25);
-        base.frame.add(hardSumButton);
+      
         
         
     }
