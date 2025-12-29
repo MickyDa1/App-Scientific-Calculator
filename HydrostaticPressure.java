@@ -8,6 +8,7 @@ import javax.swing.JTextField;
 public class HydrostaticPressure {
     public static void main(){
         base.setUp("Hydrostatic Pressure");
+        base.homeButtom();
 
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
@@ -54,7 +55,7 @@ public class HydrostaticPressure {
                     
                     BackendMediumMaths.hydrostaticPressure(heightValue, densityValue, gfsValue);
                 } catch (IllegalArgumentException b) {
-                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                    base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
                 }
             }
         });

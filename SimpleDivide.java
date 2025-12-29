@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class SimpleDivide {
     public static void main(){
         base.setUp("Simple Divide");
-
+        base.homeButtom();
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
         headingLabel.setForeground(Color.black);
@@ -47,7 +47,7 @@ public class SimpleDivide {
                     BackendSimpleMaths.Divide(inputAValue, inputBValue);
                 } catch (IllegalArgumentException b) {
                     
-                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                    base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
                 }
             }
         });

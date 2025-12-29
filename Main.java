@@ -5,7 +5,10 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){ //Used this to allow me to call "realone" using the home button
+        realone();
+    }
+    public static void realone() {
         
         base.setUp("Main Menu");
         

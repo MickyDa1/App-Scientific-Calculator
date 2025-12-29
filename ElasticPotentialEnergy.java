@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class ElasticPotentialEnergy {
     public static void main() {
         base.setUp("Elastic Potential Energy");
-
+        base.homeButtom();
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
         headingLabel.setForeground(Color.black);

@@ -12,7 +12,7 @@ Day 2 - 06.12.2025 - Simple Branch
 
 Day 3 - 15.12.2025 - medium Branch
   -added all the functionality for the medium branch and made everything for it
-  
+
 Day 4 - 17.12.2025 - hard Branch 
   -Created the Azimuth method in BackendHardMaths 
   -created the hard menu and Azimuth Screens in java
@@ -46,3 +46,7 @@ Day 10 - 28.12.2025 - hard Branch
     0.0 as for that change it didnt require it however i need it to change into different section of my sorting code 
   -added error handling for invalid entry types on sorting screen 
   -added error handling for invalid entry types on PrimeChecker
+  -added the home button to base in order to make it useful everywhere
+  -added a false start to make the home button work
+  -added home button to everywhere
+  -uncommented the section in the error handling as it is now put in

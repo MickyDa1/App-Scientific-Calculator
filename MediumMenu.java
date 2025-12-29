@@ -11,6 +11,7 @@ public class MediumMenu {
         base.setUp("Simple Menu");
 
         base.frame.setVisible(true);
+        base.homeButtom();
 
         JLabel mainMenuLabel = new JLabel("Which of the following would you like to use");
         mainMenuLabel.setBounds(86, 65, 300, 25);

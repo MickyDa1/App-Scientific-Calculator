@@ -8,6 +8,7 @@ public class HardMenu {
     public static void main() {
 
         base.setUp("Hard Main Menu");
+        base.homeButtom();
         
         JLabel mm_headingLabel_2 = new JLabel("Please Select One Of The Following");
         mm_headingLabel_2.setBounds(86, 65, 300, 25);

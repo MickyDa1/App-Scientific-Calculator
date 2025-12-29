@@ -30,7 +30,7 @@ public class base {
     }
 
     public static void result(String equationName, String total){    
-
+        base.homeButtom();
         frame = new JFrame(equationName);
         frame.setSize(275,500);
         frame.setLayout(null);
@@ -46,7 +46,7 @@ public class base {
     }
 
     public static void empty(String pageName){
-
+        base.homeButtom();
         JPanel rectangle = new JPanel();
         rectangle.setBackground(Color.white);
         rectangle.setBounds(20, 20, 345, 435);
@@ -77,6 +77,18 @@ public class base {
     public static void mistake(String title, String message){
         JOptionPane.showMessageDialog(frame, message, title, JOptionPane.ERROR_MESSAGE);
     }    
+
+    public static void homeButtom(){
+        JButton homeButton = new JButton("home");
+        homeButton.setBounds(10, 10, 115, 25);
+        base.frame.add(homeButton);
+        homeButton.addActionListener(new ActionListener() {
+           public void actionPerformed(ActionEvent e) {
+                base.frame.setVisible(false);
+				Main.realone();
+            }
+        });
+    }
     
 
 }

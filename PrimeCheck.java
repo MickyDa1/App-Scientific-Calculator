@@ -9,6 +9,7 @@ public class PrimeCheck {
     public static void main() {
 
         base.setUp("Prime Check");
+        base.homeButtom();
         
         JLabel mm_headingLabel_2 = new JLabel("Please fill in the following box");
         mm_headingLabel_2.setBounds(86, 65, 300, 25);
