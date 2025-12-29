@@ -14,13 +14,33 @@ public class Main {
         mainMenuLabel.setForeground(Color.black);
         base.frame.add(mainMenuLabel);
 
+        JButton simpleSumButton = new JButton("Simple Sums");
+        simpleSumButton.setBounds(140, 100, 115, 25);
+        base.frame.add(simpleSumButton);
+        simpleSumButton.addActionListener(new ActionListener() {
+           public void actionPerformed(ActionEvent e) {
+                base.frame.setVisible(false);
+				        SimpleMenu.Main();
+            }
+        });
+
         JButton MediumSumButton = new JButton("Medium Sums");
-        MediumSumButton.setBounds(140, 120, 115, 25);
+        MediumSumButton.setBounds(140, 175, 115, 25);
         base.frame.add(MediumSumButton);
         MediumSumButton.addActionListener(new ActionListener() {
            public void actionPerformed(ActionEvent e) {
                 base.frame.setVisible(false);
 				        MediumMenu.Main();
+            }
+        });
+      
+        JButton HardSumButton = new JButton("Hard Sums");
+        HardSumButton.setBounds(140, 250, 115, 25);
+        base.frame.add(HardSumButton);
+        HardSumButton.addActionListener(new ActionListener() {
+           public void actionPerformed(ActionEvent e) {
+                base.frame.setVisible(false);
+				        HardMenu.main();
             }
         });
       

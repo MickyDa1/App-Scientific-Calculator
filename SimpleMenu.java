@@ -16,7 +16,6 @@ public class SimpleMenu {
         mainMenuLabel.setBounds(86, 65, 300, 25);
         mainMenuLabel.setForeground(Color.black);
         base.frame.add(mainMenuLabel);
-        
 
         JButton simpleAddingButton = new JButton("A + B");
         simpleAddingButton.setBounds(140, 100, 115, 25); //place x, place y, 115, 25  
