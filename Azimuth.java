@@ -58,7 +58,7 @@ public class Azimuth {
 
         //Submit Button
         JButton submitButton = new JButton("Submit");
-        submitButton.setBounds(140, 140, 115, 25);
+        submitButton.setBounds(140, 400, 115, 25);
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
@@ -80,6 +80,8 @@ public class Azimuth {
                 
             }
         });
+
+        base.rectangle();
         
     }
 }

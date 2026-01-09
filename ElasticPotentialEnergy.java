@@ -14,22 +14,22 @@ public class ElasticPotentialEnergy {
         headingLabel.setForeground(Color.black);
         base.frame.add(headingLabel);
 
-		JLabel inputALabel = new JLabel("Number for Spring Constant(N/m)): ");
-		inputALabel.setBounds(50, 125, 200, 25);
+		JLabel inputALabel = new JLabel("Number for Spring Constant(N/m):");
+		inputALabel.setBounds(89, 125, 205, 25);
 		inputALabel.setForeground(Color.black);
 		base.frame.add(inputALabel);
 		
 		JTextField springConstant = new JTextField();
-		springConstant.setBounds(170, 125, 150, 25);
+		springConstant.setBounds(115, 155, 150, 25);
 	    base.frame.add(springConstant);
 
         JLabel inputBLabel = new JLabel("Number for Extension(m): ");
-		inputBLabel.setBounds(50, 200, 200, 25);
+		inputBLabel.setBounds(115, 200, 200, 25);
 		inputBLabel.setForeground(Color.black);
 		base.frame.add(inputBLabel);
 		
 		JTextField Extenstion = new JTextField(); 
-		Extenstion.setBounds(170, 200, 150, 25);
+		Extenstion.setBounds(115, 230, 150, 25);
 	    base.frame.add(Extenstion);
         //Calls Image
 
@@ -45,9 +45,11 @@ public class ElasticPotentialEnergy {
 
                     BackendMediumMaths.elasticPotentialEnergy(springConstantValue, ExtenstionValue);
                 } catch (IllegalArgumentException b) {
-                    //base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
+                    base.mistake("ERROR", "SOMETHING WENT WRONG, PLEASE TRY AGAIN IF THE PROBLEM CONTINUES, PLEASE CHECK THE BOXES");
                 }
             }
         });
+
+        base.rectangle();
     }
 }

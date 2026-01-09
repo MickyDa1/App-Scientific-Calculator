@@ -13,22 +13,22 @@ public class Factorial {
         base.homeButtom();
         
         JLabel mm_headingLabel_2 = new JLabel("Please fill in the following box");
-        mm_headingLabel_2.setBounds(86, 65, 300, 25);
+        mm_headingLabel_2.setBounds(95, 65, 300, 25);
         mm_headingLabel_2.setForeground(Color.black);
         base.frame.add(mm_headingLabel_2);
 
-        JLabel factorialNumberLabel = new JLabel("Enter Your Number Here -->");
-        factorialNumberLabel.setBounds(86, 125, 300, 25);
+        JLabel factorialNumberLabel = new JLabel("Enter The Number You Want To Factorialise");
+        factorialNumberLabel.setBounds(68, 125, 300, 25);
         factorialNumberLabel.setForeground(Color.black);
         base.frame.add(factorialNumberLabel);
 
         JTextField factorialNumber = new JTextField();
-        factorialNumber.setBounds(170, 125, 150,25);
+        factorialNumber.setBounds(120, 150, 150,25);
         base.frame.add(factorialNumber);
 
         //Submit Button
         JButton submitButton = new JButton("Submit");
-        submitButton.setBounds(140, 150, 115, 25);
+        submitButton.setBounds(135, 180, 115, 25);
         base.frame.add(submitButton);
         submitButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
@@ -48,6 +48,8 @@ public class Factorial {
                 
             }
         });
+
+        base.rectangle();
         
     }
 }

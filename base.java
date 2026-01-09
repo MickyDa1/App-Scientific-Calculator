@@ -25,7 +25,6 @@ public class base {
         frame.getContentPane().setBackground(Color.blue);
 
         //frame.add(rectangle);
-
         frame.setVisible(true);
     }
 
@@ -41,6 +40,8 @@ public class base {
         totalLabel.setBounds(137, 32, 300, 25);
         totalLabel.setForeground(Color.black);
         base.frame.add(totalLabel);
+
+        
 
         frame.setVisible(true);
     }
@@ -90,5 +91,13 @@ public class base {
         });
     }
     
+    public static void rectangle(){
+        JPanel rectangle = new JPanel();
+        rectangle.setBackground(Color.white);
+        rectangle.setBounds(20, 20, 345, 435);
+        rectangle.setLayout(null);
+
+        base.frame.add(rectangle);
+    }
 
 }

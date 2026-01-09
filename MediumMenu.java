@@ -30,7 +30,7 @@ public class MediumMenu {
         });
 
         JButton weightButton = new JButton("Weight");
-        weightButton.setBounds(140, 150, 115, 25); //place x, place y, 115, 25  
+        weightButton.setBounds(140, 175, 115, 25); //place x, place y, 115, 25  
         base.frame.add(weightButton);
         weightButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -40,7 +40,7 @@ public class MediumMenu {
         });
 
         JButton HydrostaticPressureButton = new JButton("Hydrostatic Pressure");
-        HydrostaticPressureButton.setBounds(140, 200, 115, 25); //place x, place y, 115, 25  
+        HydrostaticPressureButton.setBounds(140, 250, 115, 25); //place x, place y, 115, 25  
         base.frame.add(HydrostaticPressureButton);
         HydrostaticPressureButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -50,7 +50,7 @@ public class MediumMenu {
         });
 
         JButton ElasticPotentialEnergyButton = new JButton("Elastic Potential Energy");
-        ElasticPotentialEnergyButton.setBounds(140, 250, 115, 25); //place x, place y, 115, 25  
+        ElasticPotentialEnergyButton.setBounds(140, 325, 115, 25); //place x, place y, 115, 25  
         base.frame.add(ElasticPotentialEnergyButton);
         ElasticPotentialEnergyButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

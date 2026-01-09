@@ -53,6 +53,8 @@ public class HardMenu {
                 PrimeCheck.main();
             }
         });
+
+        base.rectangle();
         
     }
 }

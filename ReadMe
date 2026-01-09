@@ -1,3 +1,7 @@
+Introduction 
+  - Hello and Welcome to my fill in the blank calculator, With this you should be able to solve a certain equations from the my selection
+  I found that the software I developed not only helped me to understnad the concept of recursion alot better but also helped me to increase certain skill which I felt were behind for someone at my level (2nd Year software Engineering Student), This did include GIT, Error handling and documentation keeping (Specifically the ReadMe.txt), I am rather proud of what I have done as this was a solo project with a little help from one of my classmates when finding equations (specifically Azimuth). Down below you will see the Documentation I have done which you can see what I did on a day to day basis with the date and what branch I was working on.
+
 
 Day 1 - 05.12.2025 - Simple Branch 
   -Made the UI and get a re-usable GUI base set up 
@@ -47,6 +51,16 @@ Day 10 - 28.12.2025 - hard Branch
   -added error handling for invalid entry types on sorting screen 
   -added error handling for invalid entry types on PrimeChecker
   -added the home button to base in order to make it useful everywhere
-  -added a false start to make the home button work
+  -added a false start to make the home button work (look at Main.java for more details)
   -added home button to everywhere
   -uncommented the section in the error handling as it is now put in
+
+Day 11 - 09.01.2026 - main branch
+  -added an introduction to the ReadMe.txt
+  -ajusted the spacing on MediumMenu and SimpleMenu buttons to make it more consistant
+  -adjusted the submit button on the Azimuth screen
+  -moved some of the stuff around on the ElasticPotentialEnergy screen
+  -re-aranged Factorial Screen
+  -added the white background to the HardMenu
+  -re-arranged hydrostaticPreassure
+  

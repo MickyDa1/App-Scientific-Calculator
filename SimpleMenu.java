@@ -29,7 +29,7 @@ public class SimpleMenu {
         });
 
         JButton simpleSubtractButton = new JButton("A - B");
-        simpleSubtractButton.setBounds(140, 150, 115, 25); //place x, place y, 115, 25  
+        simpleSubtractButton.setBounds(140, 175, 115, 25); //place x, place y, 115, 25  
         base.frame.add(simpleSubtractButton);
         simpleSubtractButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -39,7 +39,7 @@ public class SimpleMenu {
         });
 
         JButton simpleDivideButton = new JButton("A / B");
-        simpleDivideButton.setBounds(140, 200, 115, 25); //place x, place y, 115, 25  
+        simpleDivideButton.setBounds(140, 250, 115, 25); //place x, place y, 115, 25  
         base.frame.add(simpleDivideButton);
         simpleDivideButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -49,7 +49,7 @@ public class SimpleMenu {
         });
 
         JButton simpleMultiplyButton = new JButton("A x B");
-        simpleMultiplyButton.setBounds(140, 250, 115, 25); //place x, place y, 115, 25  
+        simpleMultiplyButton.setBounds(140, 325, 115, 25); //place x, place y, 115, 25  
         base.frame.add(simpleMultiplyButton);
         simpleMultiplyButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -57,5 +57,7 @@ public class SimpleMenu {
 				SimpleMultiply.main();
             }
         });
+
+        base.rectangle();
     }
 }

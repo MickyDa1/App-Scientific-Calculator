@@ -8,15 +8,20 @@ public class Main {
     public static void main(String[] args){ //Used this to allow me to call "realone" using the home button
         realone();
     }
+
     public static void realone() {
         
         base.setUp("Main Menu");
+        //base.rectangle();
         
         JLabel mainMenuLabel = new JLabel("Please Select One Of The Following:");
         mainMenuLabel.setBounds(86, 65, 300, 25);
         mainMenuLabel.setForeground(Color.black);
         base.frame.add(mainMenuLabel);
-
+        
+        //base.rectangle(); - worked but only showed the label
+        
+        
         JButton simpleSumButton = new JButton("Simple Sums");
         simpleSumButton.setBounds(140, 100, 115, 25);
         base.frame.add(simpleSumButton);
@@ -27,6 +32,8 @@ public class Main {
             }
         });
 
+        //base.rectangle();
+
         JButton MediumSumButton = new JButton("Medium Sums");
         MediumSumButton.setBounds(140, 175, 115, 25);
         base.frame.add(MediumSumButton);
@@ -36,6 +43,8 @@ public class Main {
 				        MediumMenu.Main();
             }
         });
+
+        //base.rectangle();
       
         JButton HardSumButton = new JButton("Hard Sums");
         HardSumButton.setBounds(140, 250, 115, 25);
@@ -46,7 +55,9 @@ public class Main {
 				        HardMenu.main();
             }
         });
-      
+
+        base.rectangle();
+
         
         
     }
