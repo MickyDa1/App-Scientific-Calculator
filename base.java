@@ -29,25 +29,15 @@ public class base {
     }
 
     public static void result(String equationName, String total){    
-        base.homeButtom();
-        frame = new JFrame(equationName);
-        frame.setSize(275,500);
-        frame.setLayout(null);
-        frame.getContentPane().setBackground(Color.blue);
-
-
-        JLabel totalLabel = new JLabel(total);
-        totalLabel.setBounds(137, 32, 300, 25);
-        totalLabel.setForeground(Color.black);
-        base.frame.add(totalLabel);
-
         
-
-        frame.setVisible(true);
+        if (total.length() > 178){
+            JOptionPane.showMessageDialog(frame, "Thats too long", equationName, JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(frame, total, equationName, JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 
     public static void empty(String pageName){
-        base.homeButtom();
         JPanel rectangle = new JPanel();
         rectangle.setBackground(Color.white);
         rectangle.setBounds(20, 20, 345, 435);
@@ -56,11 +46,9 @@ public class base {
 
         frame = new JFrame(pageName);
         frame.setSize(400, 500);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.getContentPane().setBackground(Color.blue);
-
-        //frame.add(rectangle);
 
         frame.setVisible(true);
     }
@@ -79,7 +67,7 @@ public class base {
         JOptionPane.showMessageDialog(frame, message, title, JOptionPane.ERROR_MESSAGE);
     }    
 
-    public static void homeButtom(){
+    public static void homeButton(){
         JButton homeButton = new JButton("home");
         homeButton.setBounds(10, 10, 115, 25);
         base.frame.add(homeButton);

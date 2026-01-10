@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class KeneticEnergy {
     public static void main(){
         base.setUp("Kenetic Energy");
-        base.homeButtom();
+        base.homeButton();
 
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
@@ -16,21 +16,21 @@ public class KeneticEnergy {
         base.frame.add(headingLabel);
 
 		JLabel inputALabel = new JLabel("Number for Mass(kg): ");
-		inputALabel.setBounds(50, 125, 200, 25);
+		inputALabel.setBounds(125, 125, 200, 25);
 		inputALabel.setForeground(Color.black);
 		base.frame.add(inputALabel);
 		
 		JTextField mass = new JTextField();
-		mass.setBounds(170, 125, 150, 25);
+		mass.setBounds(120, 145, 150, 25);
 	    base.frame.add(mass);
 
         JLabel inputBLabel = new JLabel("Number for Velocity(m/s): ");
-		inputBLabel.setBounds(50, 200, 200, 25);
+		inputBLabel.setBounds(115, 200, 200, 25);
 		inputBLabel.setForeground(Color.black);
 		base.frame.add(inputBLabel);
 		
 		JTextField velocity = new JTextField(); 
-		velocity.setBounds(170, 200, 150, 25);
+		velocity.setBounds(120, 220, 150, 25);
 	    base.frame.add(velocity);
         //Calls Image
 
@@ -50,5 +50,7 @@ public class KeneticEnergy {
                 }
             }
         });
+
+        base.rectangle();
     }
 }

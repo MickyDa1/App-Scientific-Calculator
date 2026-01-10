@@ -9,7 +9,7 @@ public class Azimuth {
     public static void main() {
 
         base.setUp("Azimuth");
-        base.homeButtom();
+        base.homeButton();
         
         JLabel mm_headingLabel_2 = new JLabel("Please fill in the following boxes");
         mm_headingLabel_2.setBounds(86, 65, 300, 25);

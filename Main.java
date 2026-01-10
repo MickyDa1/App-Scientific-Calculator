@@ -23,7 +23,7 @@ public class Main {
         
         
         JButton simpleSumButton = new JButton("Simple Sums");
-        simpleSumButton.setBounds(140, 100, 115, 25);
+        simpleSumButton.setBounds(137, 100, 120, 25);
         base.frame.add(simpleSumButton);
         simpleSumButton.addActionListener(new ActionListener() {
            public void actionPerformed(ActionEvent e) {
@@ -35,7 +35,7 @@ public class Main {
         //base.rectangle();
 
         JButton MediumSumButton = new JButton("Medium Sums");
-        MediumSumButton.setBounds(140, 175, 115, 25);
+        MediumSumButton.setBounds(137, 175, 120, 25);
         base.frame.add(MediumSumButton);
         MediumSumButton.addActionListener(new ActionListener() {
            public void actionPerformed(ActionEvent e) {
@@ -47,7 +47,7 @@ public class Main {
         //base.rectangle();
       
         JButton HardSumButton = new JButton("Hard Sums");
-        HardSumButton.setBounds(140, 250, 115, 25);
+        HardSumButton.setBounds(137, 250, 120, 25);
         base.frame.add(HardSumButton);
         HardSumButton.addActionListener(new ActionListener() {
            public void actionPerformed(ActionEvent e) {

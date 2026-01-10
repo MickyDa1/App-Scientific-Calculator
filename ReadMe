@@ -55,6 +55,11 @@ Day 10 - 28.12.2025 - hard Branch
   -added home button to everywhere
   -uncommented the section in the error handling as it is now put in
 
+PLEASE NOTE:
+    From here on, it its just cosmetic and little corrections from what i have seen throughout the
+    code size, for example, adjusting spacing and re-arranging certain aspects. Whilst there might be a few
+    functionality changes it is mainly just cosmetic.
+
 Day 11 - 09.01.2026 - main branch
   -added an introduction to the ReadMe.txt
   -ajusted the spacing on MediumMenu and SimpleMenu buttons to make it more consistant
@@ -63,4 +68,27 @@ Day 11 - 09.01.2026 - main branch
   -re-aranged Factorial Screen
   -added the white background to the HardMenu
   -re-arranged hydrostaticPreassure
-  
+
+Day 12 - 10.01.2026 - main branch
+  -re-arranged the Kenetic energy screen
+  -added the white background to the medium menu
+  -spotted a mistake on the medium menu title and coorrected it
+  -changed "Hard Main Menu" to "Hard Menu"
+  -added the white background throughout the Simple sums
+  -re-arranged the Sorting Screen
+  -re-arranged the Weight Screen
+  -adjusted the buttons on the main menu to fit the "Medium Sums" and to make them consistant
+  -adjusted the buttons on the medium menu to look better and to fit all the works and make them consistant
+  -Checked that all the "base were matching too"
+    -setUp - was correct
+    -result - was changed to a JOptionPane Message box as this was the best way for me to keep it consistant
+            - added a max length for Factorial purposes using the .Length as it would be too long(Length wise)
+    -empty - took out the Frame.setDefaultCloseOperation
+    -mistake - was correct
+    -homeButton - Changed from homeButtom to homeButton (Spelling error)
+    -rectangle - worked correclty
+  -changed the width of the label in sorting logic to "345" as it allows for larger numbers
+
+PLEASE NOTE
+    This is where i felt like i have finished and will be going to ask some people i know to test it and give me 
+    feedback

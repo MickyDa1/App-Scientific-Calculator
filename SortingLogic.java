@@ -35,6 +35,7 @@ public class SortingLogic {
         int labelY = 50;
         base.empty("Sorting");
         
+        
         JLabel headingLabel = new JLabel("The order is as follows: ");
         headingLabel.setBounds(86, 25, 300, 25);
         headingLabel.setForeground(Color.black);
@@ -43,9 +44,10 @@ public class SortingLogic {
         sortingList.sort(Comparator.naturalOrder());
         
         for (Double c : sortingList) {
-           
+
+
             JLabel number = new JLabel(String.valueOf(c));
-            number.setBounds(86, labelY, 300, 25);
+            number.setBounds(86, labelY, 345, 25);
             number.setForeground(Color.black);
             base.frame.add(number);
             labelY = labelY + 25;
@@ -54,7 +56,7 @@ public class SortingLogic {
             lineCount++;
             
             if (lineCount % 10 == 0) {
-				System.out.println("Press Enter to continue viewing or type quit to stop");
+				
                 boolean next = base.check();
                 if (next == false) {
                     break;
@@ -65,7 +67,7 @@ public class SortingLogic {
                 }
             }
         }
-
+        base.rectangle();
     }
 
 }

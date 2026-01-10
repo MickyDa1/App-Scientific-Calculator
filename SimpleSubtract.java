@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class SimpleSubtract {
     public static void main(){
         base.setUp("Simple Subtract");
-        base.homeButtom();
+        base.homeButton();
 
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
@@ -50,5 +50,7 @@ public class SimpleSubtract {
                 }
             }
         });
+
+        base.rectangle();
     }
 }

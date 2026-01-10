@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class Weight {
     public static void main() {
         base.setUp("Weight");
-        base.homeButtom();
+        base.homeButton();
 
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
@@ -16,21 +16,21 @@ public class Weight {
         base.frame.add(headingLabel);
 
 		JLabel inputALabel = new JLabel("Number for Mass(kg): ");
-		inputALabel.setBounds(50, 125, 200, 25);
+		inputALabel.setBounds(130, 125, 200, 25);
 		inputALabel.setForeground(Color.black);
 		base.frame.add(inputALabel);
 		
 		JTextField mass = new JTextField();
-		mass.setBounds(170, 125, 150, 25);
+		mass.setBounds(120, 145, 150, 25);
 	    base.frame.add(mass);
 
         JLabel inputBLabel = new JLabel("Number for Gravitational Field Strength(N/kg): ");
-		inputBLabel.setBounds(50, 200, 200, 25);
+		inputBLabel.setBounds(75, 200, 300, 25);
 		inputBLabel.setForeground(Color.black);
 		base.frame.add(inputBLabel);
 		
 		JTextField GFS = new JTextField(); 
-		GFS.setBounds(170, 200, 150, 25);
+		GFS.setBounds(120, 220, 150, 25);
 	    base.frame.add(GFS);
         //Calls Image
 
@@ -49,5 +49,7 @@ public class Weight {
                 }
             }
         });
+
+        base.rectangle();
     }
 }

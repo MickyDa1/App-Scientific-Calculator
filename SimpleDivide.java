@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class SimpleDivide {
     public static void main(){
         base.setUp("Simple Divide");
-        base.homeButtom();
+        base.homeButton();
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
         headingLabel.setForeground(Color.black);
@@ -51,5 +51,7 @@ public class SimpleDivide {
                 }
             }
         });
+
+        base.rectangle();
     }
 }

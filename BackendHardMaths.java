@@ -33,7 +33,7 @@ public class BackendHardMaths {
         for (int i = 2; i * i <= input; i++) {
             if (input % i == 0) {
                 result = false;
-                base.result("Prime Checker1", String.valueOf(result));
+                base.result("Prime Checker", String.valueOf(result));
                 break;
             }
 

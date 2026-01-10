@@ -7,8 +7,8 @@ import javax.swing.JLabel;
 public class HardMenu {
     public static void main() {
 
-        base.setUp("Hard Main Menu");
-        base.homeButtom();
+        base.setUp("Hard Menu");
+        base.homeButton();
         
         JLabel mm_headingLabel_2 = new JLabel("Please Select One Of The Following");
         mm_headingLabel_2.setBounds(86, 65, 300, 25);

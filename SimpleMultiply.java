@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class SimpleMultiply {
     public static void main(){
         base.setUp("Simple Multiply");
-        base.homeButtom();
+        base.homeButton();
 
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
@@ -50,5 +50,7 @@ public class SimpleMultiply {
                 }
             }
         });
+
+        base.rectangle();
     }
 }

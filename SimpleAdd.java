@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class SimpleAdd {
     public static void main(){
         base.setUp("Simple Add");
-        base.homeButtom();
+        base.homeButton();
         JLabel headingLabel = new JLabel("Please Fill In The Following Boxes:");
         headingLabel.setBounds(86, 65, 300, 25);
         headingLabel.setForeground(Color.black);
@@ -50,5 +50,6 @@ public class SimpleAdd {
                 
             }
         });
+        base.rectangle();
     }
 }

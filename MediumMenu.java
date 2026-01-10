@@ -8,19 +8,19 @@ import javax.swing.JLabel;
 public class MediumMenu {
     public static void Main(){
         
-        base.setUp("Simple Menu");
+        base.setUp("Medium Menu");
 
         base.frame.setVisible(true);
-        base.homeButtom();
+        base.homeButton();
 
         JLabel mainMenuLabel = new JLabel("Which of the following would you like to use");
-        mainMenuLabel.setBounds(86, 65, 300, 25);
+        mainMenuLabel.setBounds(65, 65, 300, 25);
         mainMenuLabel.setForeground(Color.black);
         base.frame.add(mainMenuLabel);
         
 
         JButton keneticEnergyButton = new JButton("Kenetic Energy");
-        keneticEnergyButton.setBounds(140, 100, 115, 25); //place x, place y, 115, 25  
+        keneticEnergyButton.setBounds(110, 100, 175, 25); //place x, place y, 115, 25  
         base.frame.add(keneticEnergyButton);
         keneticEnergyButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -30,7 +30,7 @@ public class MediumMenu {
         });
 
         JButton weightButton = new JButton("Weight");
-        weightButton.setBounds(140, 175, 115, 25); //place x, place y, 115, 25  
+        weightButton.setBounds(110, 175, 175, 25); //place x, place y, 115, 25  
         base.frame.add(weightButton);
         weightButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -40,7 +40,7 @@ public class MediumMenu {
         });
 
         JButton HydrostaticPressureButton = new JButton("Hydrostatic Pressure");
-        HydrostaticPressureButton.setBounds(140, 250, 115, 25); //place x, place y, 115, 25  
+        HydrostaticPressureButton.setBounds(110, 250, 175, 25); //place x, place y, 115, 25  
         base.frame.add(HydrostaticPressureButton);
         HydrostaticPressureButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -50,7 +50,7 @@ public class MediumMenu {
         });
 
         JButton ElasticPotentialEnergyButton = new JButton("Elastic Potential Energy");
-        ElasticPotentialEnergyButton.setBounds(140, 325, 115, 25); //place x, place y, 115, 25  
+        ElasticPotentialEnergyButton.setBounds(110, 325, 175, 25); //place x, place y, 115, 25  
         base.frame.add(ElasticPotentialEnergyButton);
         ElasticPotentialEnergyButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -58,5 +58,7 @@ public class MediumMenu {
 				ElasticPotentialEnergy.main();
             }
         });
+
+        base.rectangle();
     }
 }
