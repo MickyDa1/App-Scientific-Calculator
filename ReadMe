@@ -86,9 +86,14 @@ Day 12 - 10.01.2026 - main branch
     -empty - took out the Frame.setDefaultCloseOperation
     -mistake - was correct
     -homeButton - Changed from homeButtom to homeButton (Spelling error)
-    -rectangle - worked correclty
+    -rectangle - worked correcltsy
   -changed the width of the label in sorting logic to "345" as it allows for larger numbers
 
 PLEASE NOTE
     This is where i felt like i have finished and will be going to ask some people i know to test it and give me 
     feedback
+
+Day 13 - 13.01.2026 - main branch
+  -added a line which makes the application non-resizable so it will continuously look nice (based on feedback)
+  -found a problem (sorting screen wont close after) - not fixed today but glad I found it
+
