@@ -32,12 +32,12 @@ public class SortingLogic {
 
     public static void sortingRead(ArrayList<Double> sortingList){
         int lineCount = 0;
-        int labelY = 50;
+        int labelY = 70;
         base.empty("Sorting");
         
         
         JLabel headingLabel = new JLabel("The order is as follows: ");
-        headingLabel.setBounds(86, 25, 300, 25);
+        headingLabel.setBounds(86, 45, 300, 25);
         headingLabel.setForeground(Color.black);
         base.frame.add(headingLabel);
 
@@ -62,7 +62,7 @@ public class SortingLogic {
                     break;
                 } else if (next == true){
                     base.frame.setVisible(false);
-                    labelY = 50;
+                    labelY = 70;
                     base.empty("sorting");
                 }
             }

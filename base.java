@@ -3,7 +3,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -19,7 +18,8 @@ public class base {
         
 
         frame = new JFrame(pageName);
-        frame.setSize(400, 500);
+        frame.setSize(400,500);
+        frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.getContentPane().setBackground(Color.blue);
@@ -38,17 +38,22 @@ public class base {
     }
 
     public static void empty(String pageName){
-        JPanel rectangle = new JPanel();
-        rectangle.setBackground(Color.white);
-        rectangle.setBounds(20, 20, 345, 435);
-        rectangle.setLayout(null);
-        
 
         frame = new JFrame(pageName);
         frame.setSize(400, 500);
+        frame.setResizable(false);
         //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.getContentPane().setBackground(Color.blue);
+
+        JButton closeButton = new JButton("close");
+        closeButton.setBounds(10, 10, 115, 25);
+        base.frame.add(closeButton);
+        closeButton.addActionListener(new ActionListener() {
+           public void actionPerformed(ActionEvent e) {
+                base.frame.setVisible(false);
+            }
+        });
 
         frame.setVisible(true);
     }
